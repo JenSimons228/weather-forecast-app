@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/630274d9b6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container app-container">
+      <div class="row">
+        <div class="col-1">
+          <button id="my-location-button" type="submit" class="btn">
+            <i class="fas fa-map-marker-alt"></i>
+          </button>
+        </div>
+        <div class="col-5">
+          <form id="search-form">
+            <input
+              type="text"
+              class="form-control"
+              id="city-input"
+              placeholder="Enter your city"
+            />
+          </form>
+        </div>
+        
+        <div class="col-1">
+          <button id="refresh-button" type="submit" class="btn">
+            <i class="fas fa-retweet"></i>
+          </button>
+        </div>
+        <span class="col-5">
+          <button id="cbutton" type="submit" class="btn">
+            <i class="fas fa-temperature-high"></i>C
+          </button>
+
+          <button id="fbutton" type="submit" class="btn">
+            <i class="fas fa-temperature-high"></i>F
+          </button>
+        </span>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="container container-results-main">
+            <div class="current-city"><h1>London</h1></div>
+            <div class="current-date-time"><h5>Today</h5></div>
+            <i class="fas fa-cloud-sun main-weather-icon"></i>
+            <h6 id="weather-summary" class="main-weather-text">
+              <br>
+              It's currently:
+            <h6 id="main-temp" class="main-weather-text">°C</h6>
+            <p id="main-description" class="main-weather-text">Conditions:</p>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="container-mini-weather-icon">
+            <div class="isquare">
+              <i class="fas fa-cloud-sun-rain mini-icon"></i>
+            </div>
+          </div>
+          <div class="container-mini-weather-icon">
+            <div class="isquare">
+              <i class="fas fa-cloud-sun mini-icon"></i>
+            </div>
+          </div>
+          <div class="container-mini-weather-icon">
+            <div class="isquare">
+              <i class="fas fa-cloud-rain mini-icon"></i>
+            </div>
+          </div>
+          <div class="container-mini-weather-icon">
+            <div class="isquare">
+              <i class="fas fa-cloud-sun-rain mini-icon"></i>
+            </div>
+          </div>
+          <div class="container-mini-weather-icon">
+            <div class="isquare">
+              <i class="fas fa-cloud-sun mini-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="container-results1">
+            <p>
+              <strong id="day1-date">date</strong><br />Highs 0f 10°C and lows of
+              -2°C
+            </p>
+          </div>
+
+          <div class="container-results2">
+            <p>
+              <strong id="day2-date">date</strong><br />Highs 0f 9°C and lows of
+              1°C
+            </p>
+          </div>
+          <div class="container-results3">
+            <p>
+              <strong id="day3-date">date</strong><br />Highs 0f 5°C and lows of
+              -1°C
+            </p>
+          </div>
+          <div class="container-results4">
+            <p>
+              <strong id="day4-date">date</strong><br />Highs 0f 9°C and lows of
+              0°C
+            </p>
+          </div>
+          <div class="container-results5">
+            <p>
+              <strong id="day5-date">date</strong><br />Highs 0f 5°C and lows of
+              0°C
+            </p>
+          </div>
+        </div>
+      </div>
+      <p class="developer">App coded by Jennifer Simons</p>
+    </div>
+
+    <script src="src/index4.js"></script>
+  </body>
+</html>

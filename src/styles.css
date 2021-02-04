@@ -1,0 +1,111 @@
+.app-container {
+  background-image: url(src/Media/Sunrise2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  width: 650px;
+  border-radius: 4px;
+}
+.form-control {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 0;
+  height: 40px;
+  opacity: 0.5;
+  padding: 0;
+  text-indent: 10px;
+}
+.btn {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  display: inline;
+  color: white;
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: #6e4b8f;
+  border: none;
+  padding: 0;
+  transition: ease-in-out;
+}
+.btn:hover {
+  background-color: white;
+  opacity: 0.5;
+  border: #6e4b8f;
+  color: #6e4b8f;
+  transition-duration: 300ms;
+}
+#my-location-button {
+  margin: 10px;
+}
+.container-results-main {
+  border-radius: 4px;
+  margin: 10px;
+  height: 240px;
+  background-color: white;
+  opacity: 0.5;
+  text-align: center;
+}
+.isquare {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+.mini-icon {
+  color: #6e4b8f;
+  font-size: 30px;
+  line-height: 40px;
+}
+.main-weather-icon {
+  color: #6e4b8f;
+  font-size: 70px;
+}
+.main-weather-text {
+  color: #6e4b8f;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+.container-results1,
+.container-results2,
+.container-results3,
+.container-results4,
+.container-results5 {
+  border-radius: 4px;
+  margin: 10px;
+  background-color: white;
+  opacity: 0.5;
+  height: 40px;
+}
+
+p {
+  font-size: 12px;
+  padding-left: 5px;
+  padding-top: 2px;
+  color: #6e4b8f;
+}
+.developer {
+  color: white;
+  opacity: 0.6;
+  text-align: right;
+  padding-right: 12px;
+}
+h1 {
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: bolder;
+  color: #6e4b8f;
+}
+h5 {
+  font-size: 18px;
+  padding-top: 10px;
+  color: #6e4b8f;
+}
+h6 {
+  font-size: 12px;
+  color: #6e4b8f;
+  display: inline;
+  padding: 2px;
+}
